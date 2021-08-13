@@ -15,6 +15,9 @@
 }
 
 body {
+    background-image: url(/images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
     background-color: var(--dark-cyan);
 }
 
@@ -93,6 +96,12 @@ body {
 }
 
 @media (max-width: 678px) {
+    body {
+        background-position-y: 0;
+        background-position-x: -150px;
+        background-size: cover;
+    }
+
     .area-profile .container {
         width: calc(100% - 40px);
     }
